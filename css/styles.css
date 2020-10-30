@@ -152,6 +152,22 @@ ul {
   color: var(--accent);
 }
 
+.mail-item::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: teal;
+  background-image: url('../images/icon/envelope.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.phone-link::before {
+  content: '';
+  background-image: url(../images/icon/smartphone.svg);
+}
+
 /*Main*/
 
 /*Hero*/
