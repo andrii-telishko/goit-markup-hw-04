@@ -346,7 +346,8 @@ ul {
 }
 
 .social-list {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
 }
 
 .social-list .link {
@@ -362,23 +363,17 @@ ul {
 }
 
 .social-list .icon {
-  width: 20px;
-  height: 20px;
-
   fill: #afb1b8;
 }
 
-.social-list .link:hover,
-.social-list .link:focus {
+.social-list .item:hover {
   background-color: var(--accent);
   border-radius: 50%;
 }
 
-.social-list .icon:hover,
-.social-list .icon:focus {
+.social-list .icon:hover {
   fill: var(--main-background-color);
 }
-
 /*Постійні клієнит*/
 
 .clients {
@@ -389,17 +384,32 @@ ul {
   display: flex;
 }
 
-.clients-item {
+.clients-list .link {
+  display: flex;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   background-position: center;
   background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-list .link:hover {
+  border: 1px solid var(--accent);
 }
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.clients-list .icon {
+  fill: #afb1b8;
+}
+
+.clients-list .icon:hover {
+  fill: var(--accent);
 }
 
 /*Footer*/
@@ -479,37 +489,18 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-bottom: 20px;
 
   color: var(--main-background-color);
 }
 
-.footer-social > .social-list {
-  margin-top: 20px;
-}
-
 .footer-social .item {
-  width: 44px;
-  height: 44px;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
-.footer-social .insta-link {
-  background-image: url(../images/icon/instagramwhite.svg);
-}
-
-.footer-social .twit-link {
-  background-image: url(../images/icon/twitterwhite.svg);
-}
-
-.footer-social .face-link {
-  background-image: url(../images/icon/facebookwhite.svg);
-}
-
-.footer-social .linked-link {
-  background-image: url(../images/icon/linkedinwhite.svg);
+.footer-social .icon {
+  fill: var(--main-background-color);
 }
 
 /*Portfolio*/
