@@ -356,24 +356,26 @@ ul {
   justify-content: center;
   width: 44px;
   height: 44px;
+  fill: #afb1b8;
 }
 
 .social-list > .item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-list .icon {
+/* .social-list .icon {
   fill: #afb1b8;
-}
+} */
 
-.social-list .item:hover {
+.social-list .link:hover {
   background-color: var(--accent);
   border-radius: 50%;
-}
-
-.social-list .icon:hover {
   fill: var(--main-background-color);
 }
+
+/* .social-list .icon:hover {
+  fill: var(--main-background-color);
+} */
 /*Постійні клієнит*/
 
 .clients {
