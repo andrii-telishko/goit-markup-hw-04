@@ -412,8 +412,6 @@ ul {
   height: 90px;
   border: 1px solid var(--icon-fill);
   border-radius: 4px;
-  background-position: center;
-  background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
   fill: var(--icon-fill);
